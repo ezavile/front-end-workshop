@@ -4,8 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yo te adopto</title>
+  <style>
+    /* universal */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* id */
+    #adoptme {
+      margin-bottom: 20px;
+    }
+
+    /* element */
+    article {
+      padding-left: 220px !important;
+      overflow: hidden;
+    }
+    
+    /* class */
+    .bg-puppy {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      background-image: url(./images/puppy.png);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    /* descendant */
+    article h3 {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* Adjacent sibling */
+    h3 + p {
+      line-height: 1.5;
+    }
+
+    /* pseudo class */
+    p:last-child {
+      margin-top: 20px;
+      text-align: right;
+    }
+  </style>
 </head>
-<body>
+<body style="background-color: #f1f1f1;">
   <header>
     <h1>Yo te adopto</h1>
     <nav>
@@ -20,13 +68,16 @@
   <main>
     <div>imagen de fondo</div>
     <section>
-      <h2>Busco un hogar ¿me adoptas?</h2>
-      <article>
-        <div>imagen de benito el perrito</div>
-        <div>
+      <h2 id="adoptme">Busco un hogar ¿me adoptas?</h2>
+      <article style="width: 500px; background-color: white; border-radius: 5px; padding: 20px; position: relative;">
+        <div class="bg-puppy"></div>
+        <div class="puppy-description">
           <h3>Benito</h3>
           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam
-          nobis! Neque ad aliquam facilis numquam. Veritatis, sit. <a href="#">adoptar</a>
+          nobis! Neque ad aliquam facilis numquam. Veritatis, sit.
+          </p>
+          <p>
+            <a href="#">adoptar</a>
           </p>
         </div>
       </article>
