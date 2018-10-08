@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css">
   <title>Yo te adopto</title>
   <style>
-    /* universal */
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    
     /* id */
     #adoptme {
       margin-bottom: 20px;
@@ -45,15 +44,9 @@
     h3 + p {
       line-height: 1.5;
     }
-
-    /* pseudo class */
-    p:last-child {
-      margin-top: 20px;
-      text-align: right;
-    }
   </style>
 </head>
-<body style="background-color: #f1f1f1;">
+<body>
   <header>
     <h1>Yo te adopto</h1>
     <nav>
@@ -83,17 +76,37 @@
       </article>
     </section>
   </main>
-  <footer>
+  <footer class="yta_Footer">
     <nav>
-      <h2>Redes sociales</h2>
-      <ul>
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">instagram</a></li>
-        <li><a href="#">youtube</a></li>
+      <h2 class="yta_u-onlyRead">Redes sociales</h2>
+      <ul class="yta_Footer-socialNetwork">
+        <li class="yta_Footer-socialNetwork-item">
+          <a href="#">
+            <span data-icon="ei-sc-facebook" data-size="m"></span>
+            <span class="yta_u-onlyRead">facebook</span>
+          </a>
+        </li>
+        <li class="yta_Footer-socialNetwork-item">
+          <a href="#">
+            <span data-icon="ei-sc-twitter" data-size="m"></span>
+            <span class="yta_u-onlyRead">twitter</span>
+          </a>
+        </li>
+        <li class="yta_Footer-socialNetwork-item">
+          <a href="#">
+            <span data-icon="ei-sc-instagram" data-size="m"></span>
+            <span class="yta_u-onlyRead">instagram</span>
+          </a>
+        </li>
+        <li class="yta_Footer-socialNetwork-item">
+          <a href="#">
+            <span data-icon="ei-sc-youtube" data-size="m"></span>
+            <span class="yta_u-onlyRead">youtube</span>
+          </a>
+        </li>
       </ul>
     </nav>
-    <p>Copyright © 2018 Yo te adopto.</p>
+    <p class="yta_Footer-copyright">Copyright © 2018 Yo te adopto.</p>
   </footer>
 </body>
 </html>
