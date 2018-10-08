@@ -18,6 +18,11 @@ h6 {
   letter-spacing: 1px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* utilities */
 .yta_u-onlyRead {
   position: absolute !important;
@@ -28,6 +33,58 @@ h6 {
   overflow: hidden !important;
   clip: rect(0,0,0,0) !important;
   border: 0 !important;
+}
+
+.yta_u-link {
+  position: relative;
+  padding: 4px;
+  text-decoration: none;
+  color: #301e31;
+}
+
+.yta_u-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  border-bottom: 2px solid #301e31;
+  transition: width 0.5s ease;
+}
+
+.yta_u-link:hover:after {
+  width: 100%;
+}
+
+/* Menu */
+.yta_Header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.yta_Header-title {
+  font-size: 28px;
+  color: #301e31;
+}
+
+.yta_Header-title span {
+  display: block;
+}
+
+.yta_Header-menu {
+  text-align: right;
+}
+
+.yta_Header-menu-list-item {
+  padding: 8px 0px 8px 8px;
 }
 
 /* Cover */
@@ -98,27 +155,6 @@ h6 {
 .yta_Adopt-card-description-link {
   text-align: right;
   margin-top: 16px;
-}
-
-.yta_Adopt-card-description-link a {
-  position: relative;
-  font-weight: bold;
-  padding: 4px;
-  text-decoration: none;
-  color: #301e31;
-}
-
-.yta_Adopt-card-description-link a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  border-bottom: 2px solid #301e31;
-  transition: width 0.5s ease;
-}
-.yta_Adopt-card-description-link a:hover:after {
-  width: 100%;
 }
 
 /* Footer */
