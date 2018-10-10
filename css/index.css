@@ -102,6 +102,10 @@ a {
   height: 200px;
 }
 
+.yta_Cover-video {
+  display: none;
+}
+
 /* Adopt */
 .yta_Adopt {}
 
@@ -113,7 +117,9 @@ a {
 }
 
 .yta_Adopt-cards {
+  max-width: 1400px;
   padding: 24px;
+  margin: 0 auto;
 }
 
 .yta_Adopt-card {
@@ -187,3 +193,74 @@ a {
   padding: 10px;
   background-color: #301e31;
 }
+
+/* Extra small < 576px (by default) */
+
+/* Small >= 576px and < 768px */
+@media screen and (min-width: 576px) {
+  .yta_Header {
+    padding: 12px 24px;
+  }
+
+  .yta_Header-title span {
+    display: inline;
+  }
+
+  .yta_Header-menu-list-item {
+    display: inline-block;
+  }
+
+  .yta_Adopt-card {
+    padding-top: 20px;
+    padding-left: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .yta_Adopt-card-img {
+    height: 100%;
+    width: 200px;
+  }
+}
+
+/* Medium >= 768px and < 992px */
+@media screen and (min-width: 768px) {
+  .yta_Adopt-title {
+    text-align: center;
+  }
+}
+
+/* Large >= 992px and < 1200px */
+@media screen and (min-width: 992px) {
+  .yta_Cover {
+    height: auto;
+    background-image: url(./../images/puppiness.jpg);
+  }
+
+  .yta_Cover-logo {
+    display: none;
+  }
+
+  .yta_Cover-video {
+    display: block;
+    width: 100%;
+  }
+
+  .yta_Adopt-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .yta_Adopt-card {
+    width: calc(50% - 10px);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .yta_Adopt-card:nth-child(2) {
+    margin-top: 0;
+  }
+}
+
+/* Extra large >= 1200px */
