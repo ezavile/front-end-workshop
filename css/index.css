@@ -30,6 +30,21 @@ h6 {
   border: 0 !important;
 }
 
+/* Cover */
+.yta_Cover {
+  height: 100vh;
+  background-image: url(./../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yta_Cover-logo {
+  height: 200px;
+}
+
 /* Adopt */
 .yta_Adopt {}
 
