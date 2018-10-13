@@ -107,8 +107,6 @@ a {
 }
 
 /* Adopt */
-.yta_Adopt {}
-
 .yta_Adopt-title {
   font-size: 1.75em;
   padding: 0.86em;
@@ -126,7 +124,7 @@ a {
   position: relative;
   width: 100%;
   max-width: 43.75em;
-  padding: 13.75em 1.25em 1.25em 1.25em;
+  padding: 13.75em 1.25em 1.25em;
   border-radius: 5px;
   background-color: white;
   overflow: hidden;
