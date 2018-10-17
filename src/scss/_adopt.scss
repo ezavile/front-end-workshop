@@ -54,3 +54,47 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-sm) {
+  .yta_Adopt {
+    &-card {
+      padding-top: 1.25em;
+      padding-left: 13.75em;
+      margin-left: auto;
+      margin-right: auto;
+
+      &-img {
+        height: 100%;
+        width: 12.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .yta_Adopt {
+    &-title {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .yta_Adopt {
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-card {
+      width: calc(50% - 0.625em);
+      margin-left: 0;
+      margin-right: 0;
+
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+  }
+}

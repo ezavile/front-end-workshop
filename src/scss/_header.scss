@@ -29,3 +29,23 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-sm) {
+  .yta_Header {
+    padding: 0.75em 1.5em;
+
+    &-title {
+      span {
+        display: inline;
+      }
+    }
+
+    &-menu {
+      &-list {
+        &-item {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
