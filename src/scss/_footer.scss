@@ -1,0 +1,29 @@
+.yta_Footer {
+  color: $white;
+  text-align: center;
+
+  &-socialNetwork {
+    padding: 1em;
+    background-color: $purple;
+
+    &-item {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        opacity: 0.7;
+        transition: opacity 0.5s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    font-size: 0.625em;
+    padding: 1em;
+    background-color: $purple-dark;
+  }
+}
