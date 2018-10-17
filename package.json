@@ -4,7 +4,9 @@
   "description": "A very hands on workshop about essential tools and technologies to become a Front-End Developer.",
   "main": "src/app.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "prebuild": "rimraf dist",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   "homepage": "https://github.com/ezavile/front-end-workshop#readme",
   "devDependencies": {
     "parcel-bundler": "1.10.3",
+    "rimraf": "2.6.2",
     "sass": "1.14.2"
   },
   "dependencies": {
