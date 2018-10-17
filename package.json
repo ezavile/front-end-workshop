@@ -1,0 +1,22 @@
+{
+  "name": "front-end-workshop",
+  "version": "0.1.0",
+  "description": "A very hands on workshop about essential tools and technologies to become a Front-End Developer.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezavile/front-end-workshop.git"
+  },
+  "author": "Edgar Zavala <ezavile@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ezavile/front-end-workshop/issues"
+  },
+  "homepage": "https://github.com/ezavile/front-end-workshop#readme",
+  "devDependencies": {
+    "parcel-bundler": "1.10.3"
+  }
+}
