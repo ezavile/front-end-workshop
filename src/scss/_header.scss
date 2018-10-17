@@ -1,0 +1,51 @@
+.yta_Header {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  &-title {
+    font-size: 1.75em;
+    color: $purple-dark;
+
+    span {
+      display: block;
+    }
+  }
+
+  &-menu {
+    text-align: right;
+
+    &-list {
+      &-item {
+        padding: 0.5em 0 0.5em 0.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .yta_Header {
+    padding: 0.75em 1.5em;
+
+    &-title {
+      span {
+        display: inline;
+      }
+    }
+
+    &-menu {
+      &-list {
+        &-item {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $body-bg-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Pacifico';
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
