@@ -1,33 +1,33 @@
-function buildCard(id, name, details) {
-  var name = name.toLowerCase();
+(function() {
+  
+  function AdoptCardBuilder(pet) {
+    this.pet = pet;
+  }
 
-  var buildLink = function() {
-    var link = '/adoptar/' + name;
-
+  AdoptCardBuilder.prototype.buildLink = function() {
     return (
       '<p class="yta_Adopt-card-description-link">' +
-        '<a href="' + link + '" class="yta_Link-outline--primary">Adoptar</a>' +
+        '<a href="' + this.pet.getLink() + '" class="yta_Link-outline--primary">Adoptar</a>' +
       '</p>'
     );
   }
 
-
-  var buildImage = function () {
-    return '<div class="yta_Adopt-card-img" style="background-image: url(./images/' + name + '.png)"></div>';
+  AdoptCardBuilder.prototype.buildImage = function() {
+    return '<div class="yta_Adopt-card-img" style="background-image: url(' + this.pet.getImage() + ')"></div>';
   }
 
-  return function() {
+  AdoptCardBuilder.prototype.getBody = function() {
     return (
-      '<article class="yta_Adopt-card" id="' + id + '">' +
-        buildImage() +
+      '<article class="yta_Adopt-card" id="' + this.pet.id + '">' +
+        this.buildImage() +
         '<div class="yta_Adopt-card-description">' +
-          '<h3 class="yta_Adopt-card-description-name">' + name + '</h3>' +
-          '<p class="yta_Adopt-card-description-details">' + details + '</p>' +
-          buildLink() +
+          '<h3 class="yta_Adopt-card-description-name">' + this.pet.name + '</h3>' +
+          '<p class="yta_Adopt-card-description-details">' + this.pet.details + '</p>' +
+          this.buildLink() +
         '</div>' +
       '</article>'
     );
   }
-}
-
-window.buildCard = buildCard;
+  
+  window.AdoptCardBuilder = AdoptCardBuilder;
+})();

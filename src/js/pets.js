@@ -41,6 +41,10 @@
 
   pets.push(scofield);
 
+  for(var i = 0; i < pets.length; i++) {
+    pets[i] = new Pet(pets[i]["id-pet"], pets[i].name, pets[i].details);
+  }
+
   window.pets = pets;
 })();
 
