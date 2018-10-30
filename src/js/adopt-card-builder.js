@@ -1,5 +1,9 @@
-function buildCard(id, name, details) {
-  var name = name.toLowerCase();
+function buildCard(breed, owner) {
+  var name = this.name.toLowerCase();
+  breed = breed || 'mixed';
+  owner = owner || 'solovino';
+  console.log(breed);
+  console.log(owner);
 
   // console.log(buildLink()); throw an error since it is undefined for the hoisting phase
 
@@ -19,11 +23,11 @@ function buildCard(id, name, details) {
   }
 
   return (
-    '<article class="yta_Adopt-card" id="' + id + '">' +
+    '<article class="yta_Adopt-card" id="' + this['id-pet'] + '">' +
       buildImage() +
       '<div class="yta_Adopt-card-description">' +
         '<h3 class="yta_Adopt-card-description-name">' + name + '</h3>' +
-        '<p class="yta_Adopt-card-description-details">' + details + '</p>' +
+        '<p class="yta_Adopt-card-description-details">' + this.details + '</p>' +
         buildLink() +
       '</div>' +
     '</article>'
