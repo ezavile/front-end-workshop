@@ -1,11 +1,5 @@
-function buildCard(breed, owner) {
-  var name = this.name.toLowerCase();
-  breed = breed || 'mixed';
-  owner = owner || 'solovino';
-  console.log(breed);
-  console.log(owner);
-
-  // console.log(buildLink()); throw an error since it is undefined for the hoisting phase
+function buildCard(id, name, details) {
+  var name = name.toLowerCase();
 
   var buildLink = function() {
     var link = '/adoptar/' + name;
@@ -22,17 +16,18 @@ function buildCard(breed, owner) {
     return '<div class="yta_Adopt-card-img" style="background-image: url(./images/' + name + '.png)"></div>';
   }
 
-  return (
-    '<article class="yta_Adopt-card" id="' + this['id-pet'] + '">' +
-      buildImage() +
-      '<div class="yta_Adopt-card-description">' +
-        '<h3 class="yta_Adopt-card-description-name">' + name + '</h3>' +
-        '<p class="yta_Adopt-card-description-details">' + this.details + '</p>' +
-        buildLink() +
-      '</div>' +
-    '</article>'
-  );
+  return function() {
+    return (
+      '<article class="yta_Adopt-card" id="' + id + '">' +
+        buildImage() +
+        '<div class="yta_Adopt-card-description">' +
+          '<h3 class="yta_Adopt-card-description-name">' + name + '</h3>' +
+          '<p class="yta_Adopt-card-description-details">' + details + '</p>' +
+          buildLink() +
+        '</div>' +
+      '</article>'
+    );
+  }
 }
-
 
 window.buildCard = buildCard;
