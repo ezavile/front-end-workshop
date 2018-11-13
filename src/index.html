@@ -12,10 +12,25 @@
   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script>
-    var App = function() {
+    var Header = function() {
       var h1Element = React.createElement('h1', {}, 'Yo te adopto');
 
       return React.createElement('header', {}, h1Element);
+    }
+
+    var Card = function(props) {
+      var name = React.createElement('h3', {}, props.name);
+      var details = React.createElement('p', {}, props.details);
+
+      return React.createElement('article', {}, [ name, details ]);
+    }
+
+    var headerElement = React.createElement(Header);
+    var benitoElement = React.createElement(Card, { name: 'Benito', details: 'details benito...' });
+    var moringaElement = React.createElement(Card, { name: 'Moringa', details: 'details moringa...' });
+
+    var App = function() {
+      return React.createElement('div', {}, [headerElement, benitoElement, moringaElement]);
     }
 
     var rootElement = document.getElementById('root');
