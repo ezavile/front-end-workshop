@@ -25,6 +25,8 @@
   },
   "dependencies": {
     "evil-icons": "1.10.1",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
     "reset-css": "4.0.1"
   }
 }
