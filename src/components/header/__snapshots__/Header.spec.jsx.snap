@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render 1`] = `
+<header
+  className="yta_Header"
+>
+  <h1
+    className="yta_Header-title"
+  >
+    <span>
+      Yo te
+    </span>
+     adopto
+  </h1>
+  <nav
+    className="yta_Header-menu"
+  >
+    <h2
+      className="yta_u-onlyRead"
+    >
+      Menú de Navegación
+    </h2>
+    <ul
+      className="yta_Header-menu-list"
+    >
+      <li
+        className="yta_Header-menu-list-item"
+      >
+        <a
+          className="yta_Link-underline--primary"
+          href="#"
+        >
+          Adoptar
+        </a>
+      </li>
+      <li
+        className="yta_Header-menu-list-item"
+      >
+        <a
+          className="yta_Link-underline--primary"
+          href="#"
+          id="addPet"
+        >
+          Dar en adopción
+        </a>
+      </li>
+      <li
+        className="yta_Header-menu-list-item"
+      >
+        <a
+          className="yta_Link-underline--primary"
+          href="#"
+        >
+          Iniciar sesión
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
