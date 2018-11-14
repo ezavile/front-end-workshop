@@ -1,6 +1,8 @@
+@import '../../scss/variables';
+
 .yta_Cover {
   height: 100vh;
-  background-image: url(./../images/cover.jpg);
+  background-image: url(./images/cover.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -19,7 +21,7 @@
 @media screen and (min-width: $breakpoint-lg) {
   .yta_Cover {
     height: auto;
-    background-image: url(./../images/puppiness.jpg);
+    background-image: url(./images/puppiness.jpg);
 
     &-logo {
       display: none;

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cover should render 1`] = `
+<div
+  className="yta_Cover"
+>
+  <img
+    alt="Hogares para nuestros amigos"
+    className="yta_Cover-logo"
+    src="./images/logo.svg"
+  />
+  <video
+    autoPlay={true}
+    className="yta_Cover-video"
+    loop={true}
+    muted={true}
+  >
+    <source
+      src="./video/puppiness.ogv"
+      type="video/ogg"
+    />
+    <source
+      src="./video/puppiness.webm"
+      type="video/webm"
+    />
+    <source
+      src="./video/puppiness.mp4"
+      type="video/mp4"
+    />
+  </video>
+</div>
+`;
