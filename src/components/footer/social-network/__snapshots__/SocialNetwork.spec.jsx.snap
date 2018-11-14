@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialNetwork should render 1`] = `
+<li
+  className="yta_Footer-socialNetwork-item"
+>
+  <a
+    href="#"
+  >
+    <span
+      data-icon="ei-sc-facebook"
+      data-size="m"
+    />
+    <span
+      className="yta_u-onlyRead"
+    >
+      facebook
+    </span>
+  </a>
+</li>
+`;
