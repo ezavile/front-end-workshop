@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingPage should render 1`] = `
+<Fragment>
+  <Header />
+  <main>
+    <Cover />
+    <section
+      className="yta_Landing-recentPets"
+    >
+      <h2
+        className="yta_Landing-recentPets-title"
+      >
+        Busco un hogar ¿me adoptas?
+      </h2>
+      <ListPets
+        pets={
+          Array [
+            Object {
+              "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.",
+              "id": "abc",
+              "img": "https://duaw26jehqd4r.cloudfront.net/items/1M0C3r3X2t0x2q342A2A/benito.png?v=933367f2",
+              "name": "Benito",
+            },
+            Object {
+              "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.",
+              "id": "def",
+              "img": "https://duaw26jehqd4r.cloudfront.net/items/0O3b091L2O3N3x1l2Q3Q/remmy.png?v=69c651fc",
+              "name": "Remmy",
+            },
+          ]
+        }
+      />
+    </section>
+  </main>
+  <Footer />
+</Fragment>
+`;
