@@ -15,18 +15,22 @@ exports[`Footer should render 1`] = `
     <SocialNetwork
       key="facebook"
       site="facebook"
+      url="www.facebook.com/yta"
     />
     <SocialNetwork
       key="twitter"
       site="twitter"
+      url="www.twitter.com/yta"
     />
     <SocialNetwork
       key="instagram"
       site="instagram"
+      url="www.instagram.com/yta"
     />
     <SocialNetwork
       key="youtube"
       site="youtube"
+      url="www.youtube.com/yta"
     />
   </ul>
   <p

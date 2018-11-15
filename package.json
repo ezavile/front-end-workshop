@@ -7,8 +7,12 @@
     "start": "parcel src/index.html",
     "prebuild": "rimraf dist",
     "build": "parcel build src/index.html",
+    "lint": "yarn eslint src --ext .js,.jsx",
+    "lint:fix": "yarn lint --fix",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "test --coverage",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -22,9 +26,20 @@
   "homepage": "https://github.com/ezavile/front-end-workshop#readme",
   "devDependencies": {
     "babel-core": "6.26.3",
+    "babel-eslint": "10.0.1",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-prettier": "3.0.0",
+    "eslint-plugin-react": "7.11.1",
+    "husky": "1.1.4",
+    "lint-staged": "8.0.4",
     "parcel-bundler": "1.10.3",
+    "prettier": "1.15.2",
     "rimraf": "2.6.2",
     "sass": "1.14.2"
   },
@@ -50,5 +65,12 @@
     "moduleNameMapper": {
       ".+\\.(scss)$": "identity-obj-proxy"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "yarn eslint --fix",
+      "yarn jest --bail --findRelatedTests",
+      "git add"
+    ]
   }
 }

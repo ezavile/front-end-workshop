@@ -28,7 +28,7 @@ exports[`Header should render 1`] = `
       >
         <a
           className="yta_Link-underline--primary"
-          href="#"
+          href="/adopt"
         >
           Adoptar
         </a>
@@ -38,7 +38,7 @@ exports[`Header should render 1`] = `
       >
         <a
           className="yta_Link-underline--primary"
-          href="#"
+          href="/new"
           id="addPet"
         >
           Dar en adopción
@@ -49,7 +49,7 @@ exports[`Header should render 1`] = `
       >
         <a
           className="yta_Link-underline--primary"
-          href="#"
+          href="/login"
         >
           Iniciar sesión
         </a>

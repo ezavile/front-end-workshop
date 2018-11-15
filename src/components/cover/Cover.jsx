@@ -16,6 +16,6 @@ const Cover = () => (
       <source src={puppinessMP4} type="video/mp4" />
     </video>
   </div>
-)
+);
 
 export default Cover;
