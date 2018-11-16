@@ -1,60 +1,125 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header should render 1`] = `
-<header
-  className="yta_Header"
->
-  <h1
-    className="yta_Header-title"
+exports[`Header should render one <HeaderLink /> 1`] = `
+<Header>
+  <header
+    className="yta_Header"
   >
-    <span>
-      Yo te
-    </span>
-     adopto
-  </h1>
-  <nav
-    className="yta_Header-menu"
+    <h1
+      className="yta_Header-title"
+    >
+      <span>
+        Yo te
+      </span>
+       adopto
+    </h1>
+    <nav
+      className="yta_Header-menu"
+    >
+      <h2
+        className="yta_u-onlyRead"
+      >
+        Menú de Navegación
+      </h2>
+      <ul
+        className="yta_Header-menu-list"
+      >
+        <HeaderLink
+          label="Iniciar sesión"
+          onClick={[Function]}
+        >
+          <li
+            className="yta_Header-menu-list-item"
+          >
+            <button
+              className="yta_Link-underline--primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Iniciar sesión
+            </button>
+          </li>
+        </HeaderLink>
+      </ul>
+    </nav>
+  </header>
+</Header>
+`;
+
+exports[`Header should render three <HeaderLink /> 1`] = `
+<Header>
+  <header
+    className="yta_Header"
   >
-    <h2
-      className="yta_u-onlyRead"
+    <h1
+      className="yta_Header-title"
     >
-      Menú de Navegación
-    </h2>
-    <ul
-      className="yta_Header-menu-list"
+      <span>
+        Yo te
+      </span>
+       adopto
+    </h1>
+    <nav
+      className="yta_Header-menu"
     >
-      <li
-        className="yta_Header-menu-list-item"
+      <h2
+        className="yta_u-onlyRead"
       >
-        <a
-          className="yta_Link-underline--primary"
-          href="/adopt"
-        >
-          Adoptar
-        </a>
-      </li>
-      <li
-        className="yta_Header-menu-list-item"
+        Menú de Navegación
+      </h2>
+      <ul
+        className="yta_Header-menu-list"
       >
-        <a
-          className="yta_Link-underline--primary"
-          href="/new"
-          id="addPet"
+        <HeaderLink
+          label="Adoptar"
+          onClick={[Function]}
         >
-          Dar en adopción
-        </a>
-      </li>
-      <li
-        className="yta_Header-menu-list-item"
-      >
-        <a
-          className="yta_Link-underline--primary"
-          href="/login"
+          <li
+            className="yta_Header-menu-list-item"
+          >
+            <button
+              className="yta_Link-underline--primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Adoptar
+            </button>
+          </li>
+        </HeaderLink>
+        <HeaderLink
+          label="Dar en adopción"
+          onClick={[Function]}
         >
-          Iniciar sesión
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
+          <li
+            className="yta_Header-menu-list-item"
+          >
+            <button
+              className="yta_Link-underline--primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Dar en adopción
+            </button>
+          </li>
+        </HeaderLink>
+        <HeaderLink
+          label="Cerrar sesión"
+          onClick={[Function]}
+        >
+          <li
+            className="yta_Header-menu-list-item"
+          >
+            <button
+              className="yta_Link-underline--primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Cerrar sesión
+            </button>
+          </li>
+        </HeaderLink>
+      </ul>
+    </nav>
+  </header>
+</Header>
 `;
