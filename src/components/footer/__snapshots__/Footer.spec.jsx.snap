@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render 1`] = `
+<footer
+  className="yta_Footer"
+>
+  <h2
+    className="yta_u-onlyRead"
+  >
+    Redes sociales
+  </h2>
+  <ul
+    className="yta_Footer-socialNetwork"
+  >
+    <SocialNetwork
+      key="facebook"
+      site="facebook"
+      url="www.facebook.com/yta"
+    />
+    <SocialNetwork
+      key="twitter"
+      site="twitter"
+      url="www.twitter.com/yta"
+    />
+    <SocialNetwork
+      key="instagram"
+      site="instagram"
+      url="www.instagram.com/yta"
+    />
+    <SocialNetwork
+      key="youtube"
+      site="youtube"
+      url="www.youtube.com/yta"
+    />
+  </ul>
+  <p
+    className="yta_Footer-copyright"
+  >
+    Copyright © 2018 Yo te adopto.
+  </p>
+</footer>
+`;

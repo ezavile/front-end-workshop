@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PetCard should render 1`] = `
+<article
+  className="yta_PetCard"
+>
+  <div
+    className="yta_PetCard-img"
+    style={
+      Object {
+        "backgroundImage": "url(benito.png)",
+      }
+    }
+  />
+  <div
+    className="yta_PetCard-description"
+  >
+    <h3
+      className="yta_PetCard-description-name"
+    >
+      Benito
+    </h3>
+    <p
+      className="yta_PetCard-description-details"
+    >
+      some details about benito el perrito
+    </p>
+    <p
+      className="yta_PetCard-description-link"
+    >
+      <a
+        className="yta_Link-outline--primary"
+        href="/pet/abc-def"
+      >
+        Adoptar
+      </a>
+    </p>
+  </div>
+</article>
+`;

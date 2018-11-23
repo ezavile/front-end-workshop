@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+
+.yta_Landing {
+  &-recentPets {
+    &-title {
+      font-size: 1.75em;
+      padding: 0.86em;
+      background-color: $yellow;
+      color: $purple;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .yta_Landing {
+    &-recentPets {
+      &-title {
+        text-align: center;
+      }
+    }
+  }
+}

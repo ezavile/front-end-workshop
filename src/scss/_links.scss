@@ -1,6 +1,11 @@
 %link {
   display: inline-block;
   text-decoration: none;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
 }
 
 @mixin build-link-underline($name, $color) {
@@ -49,5 +54,5 @@
   @each $name, $color in (primary: $purple-dark, secondary: $yellow) {
     @include build-link-underline($name, $color);
     @include build-link-outline($name, $color);
-  } 
+  }
 }
