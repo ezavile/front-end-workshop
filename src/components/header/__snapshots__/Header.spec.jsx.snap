@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header should render one <HeaderLink /> 1`] = `
+exports[`Header should render login form 1`] = `
 <Header>
   <header
     className="yta_Header"
@@ -21,26 +21,31 @@ exports[`Header should render one <HeaderLink /> 1`] = `
       >
         Menú de Navegación
       </h2>
-      <ul
-        className="yta_Header-menu-list"
+      <form
+        className="yta_Header-form"
+        onSubmit={[Function]}
       >
-        <HeaderLink
-          label="Iniciar sesión"
-          onClick={[Function]}
+        <input
+          className="yta_Input"
+          onChange={[Function]}
+          placeholder="Usuario"
+          required={true}
+          type="text"
+        />
+        <input
+          className="yta_Input"
+          onChange={[Function]}
+          placeholder="Contraseña"
+          required={true}
+          type="password"
+        />
+        <button
+          className="yta_Link-outline--primary"
+          type="submit"
         >
-          <li
-            className="yta_Header-menu-list-item"
-          >
-            <button
-              className="yta_Link-underline--primary"
-              onClick={[Function]}
-              type="button"
-            >
-              Iniciar sesión
-            </button>
-          </li>
-        </HeaderLink>
-      </ul>
+          Iniciar sesión
+        </button>
+      </form>
     </nav>
   </header>
 </Header>

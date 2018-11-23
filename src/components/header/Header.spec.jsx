@@ -11,19 +11,13 @@ describe('Header', () => {
     header = mount(<Header />);
   });
 
-  it('should render three <HeaderLink />', () => {
-    header.find('button').simulate('click');
-    expect(header.find(HeaderLink).length).toBe(3);
+  it('should render login form', () => {
     expect(header).toMatchSnapshot();
   });
 
-  it('should render one <HeaderLink />', () => {
-    header.find('button').simulate('click');
-    header
-      .find('button')
-      .last()
-      .simulate('click');
-    expect(header.find(HeaderLink).length).toBe(1);
+  it('should render three <HeaderLink />', () => {
+    header.setState({ loggedIn: true });
+    expect(header.find(HeaderLink).length).toBe(3);
     expect(header).toMatchSnapshot();
   });
 });

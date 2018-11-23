@@ -21,8 +21,19 @@
     }
   }
 
+  &-form {
+    margin-left: 1em;
+
+    .yta_Input {
+      width: 100%;
+      margin-bottom: 0.5em;
+    }
+  }
+
   &-menu {
     text-align: right;
+    display: flex;
+    align-items: center;
 
     &-list {
       &-item {
@@ -39,6 +50,17 @@
     &-title {
       span {
         display: inline;
+      }
+    }
+
+    &-form {
+      display: flex;
+      margin-left: 0;
+
+      .yta_Input {
+        width: auto;
+        margin-right: 0.5em;
+        margin-bottom: 0;
       }
     }
 
