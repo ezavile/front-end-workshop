@@ -1,3 +1,12 @@
 node_modules
 dist
 .cache
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.DS_Store
+
+coverage

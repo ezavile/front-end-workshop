@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render login form 1`] = `
+<Header>
+  <header
+    className="yta_Header"
+  >
+    <h1
+      className="yta_Header-title"
+    >
+      <span>
+        Yo te
+      </span>
+       adopto
+    </h1>
+    <nav
+      className="yta_Header-menu"
+    >
+      <h2
+        className="yta_u-onlyRead"
+      >
+        Menú de Navegación
+      </h2>
+      <form
+        className="yta_Header-form"
+        onSubmit={[Function]}
+      >
+        <input
+          className="yta_Input"
+          onChange={[Function]}
+          placeholder="Usuario"
+          required={true}
+          type="text"
+        />
+        <input
+          className="yta_Input"
+          onChange={[Function]}
+          placeholder="Contraseña"
+          required={true}
+          type="password"
+        />
+        <button
+          className="yta_Link-outline--primary"
+          type="submit"
+        >
+          Iniciar sesión
+        </button>
+      </form>
+    </nav>
+  </header>
+</Header>
+`;
+
+exports[`Header should render three <HeaderLink /> 1`] = `
+<Header>
+  <header
+    className="yta_Header"
+  >
+    <h1
+      className="yta_Header-title"
+    >
+      <span>
+        Yo te
+      </span>
+       adopto
+    </h1>
+    <nav
+      className="yta_Header-menu"
+    >
+      <h2
+        className="yta_u-onlyRead"
+      >
+        Menú de Navegación
+      </h2>
+      <ul
+        className="yta_Header-menu-list"
+      >
+        <HeaderLink
+          label="Adoptar"
+          onClick={[Function]}
+        >
+          <li
+            className="yta_Header-menu-list-item"
+          >
+            <button
+              className="yta_Link-underline--primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Adoptar
+            </button>
+          </li>
+        </HeaderLink>
+        <HeaderLink
+          label="Dar en adopción"
+          onClick={[Function]}
+        >
+          <li
+            className="yta_Header-menu-list-item"
+          >
+            <button
+              className="yta_Link-underline--primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Dar en adopción
+            </button>
+          </li>
+        </HeaderLink>
+        <HeaderLink
+          label="Cerrar sesión"
+          onClick={[Function]}
+        >
+          <li
+            className="yta_Header-menu-list-item"
+          >
+            <button
+              className="yta_Link-underline--primary"
+              onClick={[Function]}
+              type="button"
+            >
+              Cerrar sesión
+            </button>
+          </li>
+        </HeaderLink>
+      </ul>
+    </nav>
+  </header>
+</Header>
+`;

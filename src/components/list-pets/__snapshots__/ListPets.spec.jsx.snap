@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListPets should render 1`] = `
+<div
+  className="yta_ListPets"
+>
+  <PetCard
+    details="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
+    id="abc"
+    img="https://duaw26jehqd4r.cloudfront.net/items/1M0C3r3X2t0x2q342A2A/benito.png?v=933367f2"
+    key="abc"
+    name="Benito"
+  />
+  <PetCard
+    details="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit."
+    id="def"
+    img="https://duaw26jehqd4r.cloudfront.net/items/0O3b091L2O3N3x1l2Q3Q/remmy.png?v=69c651fc"
+    key="def"
+    name="Remmy"
+  />
+</div>
+`;

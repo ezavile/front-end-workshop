@@ -1,0 +1,33 @@
+@import '../../scss/variables';
+
+.yta_ListPets {
+  max-width: 87.5em;
+  padding: 1.5em;
+  margin: 0 auto;
+
+  .yta_PetCard {
+    margin-top: 1.5em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .yta_ListPets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    .yta_PetCard {
+      width: calc(50% - 0.625em);
+      margin-left: 0;
+      margin-right: 0;
+
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+  }
+}
