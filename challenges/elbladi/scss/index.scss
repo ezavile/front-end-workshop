@@ -1,0 +1,116 @@
+@import 'global';
+
+body{
+    font-family: 'Aleo', serif;
+    }
+    
+a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card::before{
+        content: "";
+        background-image: url($moto);
+        top: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 20em;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        box-shadow: 5px 5px 70px -5px rgba(0,0,0,.3);
+    }
+    
+.card{
+        padding: 22em 3em 2em;
+        background-color: #fff;
+
+
+&_info{
+
+    &_head{
+        font-size:1.7em;
+        margin-bottom: 0.02em;
+    }
+    &_dgree{
+        margin-bottom: 1em;
+        font-size: 1.2em;
+    }
+    &_description{
+        font-size: 1.3em;
+        padding-right: 0.05em;
+        margin-bottom: 1em;
+    }
+}
+}
+.contact{
+    position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+}
+.card_foot{
+    &_location{
+        margin-bottom: 1em;
+    }
+    &_contact{
+        display: flex;
+        width: 13em;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: $small){
+    body{
+        background-color: $color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+    }
+    .card{
+        position: relative;
+        width: 66%;
+        top: 3em;
+        padding: 17em 3em 0;
+        border-radius: 2.81em;
+
+        &::before{
+            height: 16em;
+        }
+        &_foot{
+            display: flex;
+            margin-bottom: 1em;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (min-width: $middle) {
+
+    .card{
+        padding-top: 3em;
+            padding-left: 18em;
+            width: 38%;
+            top: 7em;
+
+            &::before{
+                background-image: url($playa);
+                width: 15em;
+                height: 100%;
+            }
+    }
+}
+
+@media screen and (min-width: $big){
+    .card::before{
+        top: -2em;
+        left: 2em;
+        bottom: -2em;
+        height: auto;
+    }
+} 
+
+
+
